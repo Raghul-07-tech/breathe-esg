@@ -1,0 +1,155 @@
+.dashboard-container {
+  background-color: #0b0f19;
+  color: #f8fafc;
+  min-height: 100vh;
+  padding: 40px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.dashboard-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.action-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background-color: #111827;
+  padding: 16px 20px;
+  border-radius: 10px;
+  border: 1px solid #1f2937;
+  margin-bottom: 28px;
+}
+
+.custom-select {
+  background-color: #1f2937;
+  color: #f3f4f6;
+  border: 1px solid #374151;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+.file-upload-label {
+  display: inline-block;
+  background-color: #1f2937;
+  color: #9ca3af;
+  border: 1px dashed #4b5563;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.hidden-file-input {
+  display: none;
+}
+
+.file-name {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-left: 8px;
+}
+
+.primary-upload-btn {
+  margin-left: auto;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.primary-upload-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.table-container {
+  background-color: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+
+.custom-table th {
+  background-color: #111827;
+  color: #9ca3af;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 14px 18px;
+  border-bottom: 1px solid #1f2937;
+}
+
+.custom-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #1f2937;
+  color: #e5e7eb;
+}
+
+.font-numeric {
+  font-variant-numeric: tabular-nums;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.badge-source { background-color: #374151; color: #f3f4f6; }
+.badge-success { background-color: #065f46; color: #34d399; }
+.badge-danger { background-color: #991b1b; color: #fca5a5; }
+
+.status-text {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-approved { color: #34d399; }
+.status-rejected { color: #f87171; }
+
+.action-buttons-group {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-action {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-approve {
+  background-color: #065f46;
+  color: #fff;
+}
+
+.btn-reject {
+  background-color: #7f1d1d;
+  color: #fff;
+}
