@@ -1,0 +1,33 @@
+# Breathe ESG Ingestion & Audit Prototype
+
+A comprehensive full-stack prototype built to ingest, normalize, and audit multi-tenant greenhouse gas (GHG) footprint tracking data across fragmented real-world enterprise sources.
+
+## 🚀 Deployed Environments
+- **Live Frontend Application UI:** `https://breathe-frontend.onrender.com` *(Replace with your actual Render Frontend Static Site Link)*
+- **Live Production API Gateway Server:** `https://breathe-esg-ty4m.onrender.com`
+
+---
+
+## 🛠️ Tech Stack & Architecture
+- **Backend:** Django 5.x, Django REST Framework (DRF)
+- **Frontend:** React (Vite), Axios, Tailwind CSS / Modern CSS Variables
+- **Data Ingestion Engine:** Pandas & NumPy for real-world anomaly detection and field alignment overrides.
+
+---
+
+## 📂 Core Repository Structure
+```text
+breathe-esg/
+├── backend/                  # Django REST framework web service
+│   ├── config/               # Main configuration (WSGI, Settings, Core URLs)
+│   ├── emissions/            # App containing parsing endpoints and audit models
+│   └── requirements.txt      # Production-pruned Python dependency sheet
+├── frontend/                 # React SPA bundled via Vite
+│   ├── src/
+│   │   ├── App.jsx           # Main analyst UI grid dashboard
+│   │   └── App.css           # Styled custom component design layer
+│   └── package.json
+├── MODEL.md                  # Schema multi-tenancy and lineage documentation
+├── DECISIONS.md              # Structural limits handled vs ignored definitions
+├── TRADEOFFS.md              # 3 core deliberate design omissions made
+└── SOURCES.md                # Background industry format vulnerability analysis
