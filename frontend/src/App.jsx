@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import './App.css'
 
-const API = 'https://breathe-esg-ty4m.onrender.com/api/'
+// Keep the base production URL clean
+const API = 'https://breathe-esg-ty4m.onrender.com'
 
 function App() {
   const [file, setFile] = useState(null)
@@ -29,7 +30,6 @@ function App() {
     }
     try {
       const formData = new FormData()
-      // We send both 'file' and 'csv_file' to bypass any backend naming mismatch bugs
       formData.append('file', file)
       formData.append('csv_file', file)
       formData.append('source_type', sourceType)
@@ -46,7 +46,6 @@ function App() {
       fetchRecords()
     } catch (err) {
       console.error("Upload Error:", err)
-      // Extracts the EXACT error message string from your Django views
       const errorDetails = err.response?.data 
         ? JSON.stringify(err.response.data) 
         : err.message
