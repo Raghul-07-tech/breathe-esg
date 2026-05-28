@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import './App.css'
 
-const API = 'https://breathe-backend.onrender.com'
+const API = 'https://breathe-esg-ty4m.onrender.com/api/'
 
 function App() {
   const [file, setFile] = useState(null)
